@@ -1,3 +1,5 @@
-app:
-    resource: @AppBundle/Controller/
+killsoft_competition:
+    resource: "@KillsoftCompetitionBundle/Controller/"
     type:     annotation
+    prefix:   /
+
