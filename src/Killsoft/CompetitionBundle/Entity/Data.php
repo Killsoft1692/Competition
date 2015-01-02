@@ -24,16 +24,16 @@ class Data
     /**
      * @var string
      *
-     * @ORM\Column(name="male_name", type="string")
+     * @ORM\Column(name="male", type="string")
      */
-    private $male_name;
+    private $male;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="female_name", type="string")
+     * @ORM\Column(name="female", type="string")
      */
-    private $female_name;
+    private $female;
 
     /**
      * @var \DateTime
@@ -61,14 +61,14 @@ class Data
     }
 
     /**
-     * Set male_name
+     * Set male
      *
-     * @param string $maleName
+     * @param string $male
      * @return Data
      */
-    public function setMaleName($maleName)
+    public function setMale($male)
     {
-        $this->male_name = $maleName;
+        $this->male = $male;
 
         return $this;
     }
@@ -78,32 +78,32 @@ class Data
      *
      * @return string 
      */
-    public function getMaleName()
+    public function getMale()
     {
-        return $this->male_name;
+        return $this->male;
     }
 
     /**
-     * Set female_name
+     * Set female
      *
-     * @param string $femaleName
+     * @param string $female
      * @return Data
      */
-    public function setFemaleName($femaleName)
+    public function setFemale($female)
     {
-        $this->female_name = $femaleName;
+        $this->female = $female;
 
         return $this;
     }
 
     /**
-     * Get female_name
+     * Get female
      *
      * @return string 
      */
-    public function getFemaleName()
+    public function getFemale()
     {
-        return $this->female_name;
+        return $this->female;
     }
 
     /**
