@@ -24,7 +24,7 @@ class DataType extends AbstractType
             ->add('date1', 'date')
             ->add('date2', 'date')
             ->add('save', 'submit', array(
-                'label'=>'try'
+                'label' => 'try'
             ))
             ->getForm();
     }
@@ -35,7 +35,7 @@ class DataType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data class'=>'Killsoft\CompetitionBundle\Entity\Event'
+            'data class' => 'Killsoft\CompetitionBundle\Entity\Event'
         ));
     }
 
@@ -44,6 +44,6 @@ class DataType extends AbstractType
      */
     public function getName()
     {
-        return 'Main_Form';
+        return 'main_form';
     }
 }
