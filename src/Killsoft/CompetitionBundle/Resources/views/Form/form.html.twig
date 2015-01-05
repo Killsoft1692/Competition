@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+{{ form_start(form) }}
+
+    <div class="border-r">
+        <p> {{ form_label(form.male, 'Enter male name') }} </p>
+        <p> {{ form_widget(form.male)}} </p>
+
+        <p> {{ form_label(form.female, 'Enter female name') }} </p>
+        <p> {{ form_widget(form.female)}} </p>
+
+        <p> {{ form_label(form.date1, 'Enter male birthday') }} </p>
+        <p> {{ form_widget(form.date1)}} </p>
+
+        <p> {{ form_label(form.date2, 'Enter female birthname') }}</p>
+        <p> {{ form_widget(form.date2)}} </p>
+
+    </div>
+    <div>
+        <br>
+        {{ form_widget(form.save) }}
+        {{ form_rest(form) }}
+    </div>
+
+{% endblock %}
