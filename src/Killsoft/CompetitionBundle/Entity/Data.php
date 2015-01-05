@@ -3,6 +3,7 @@
 namespace Killsoft\CompetitionBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Data
@@ -23,14 +24,14 @@ class Data
 
     /**
      * @var string
-     *
+     * @Assert\NotBlank()
      * @ORM\Column(name="male", type="string")
      */
     private $male;
 
     /**
      * @var string
-     *
+     * @Assert\NotBlank()
      * @ORM\Column(name="female", type="string")
      */
     private $female;
@@ -152,3 +153,4 @@ class Data
         return $this->date2;
     }
 }
+

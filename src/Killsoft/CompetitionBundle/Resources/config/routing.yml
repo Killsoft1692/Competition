@@ -1,0 +1,3 @@
+  main_result:
+      path: /main/result
+      defaults: { _controller: KillsoftCompetitionBundle:Action:index}
