@@ -1,3 +1,15 @@
-  main_result:
-      path: /main/result
-      defaults: { _controller: KillsoftCompetitionBundle:Action:index}
+main_result:
+    path: /{_locale}/main/result
+    defaults: { _controller: KillsoftCompetitionBundle:Action:index}
+
+main:
+    path: /{_locale}/main
+    defaults: { _controller: KillsoftCompetitionBundle:Action:form}
+
+love_profit:
+    path: /{_locale}/love_profit
+    defaults: { _controller: KillsoftCompetitionBundle:Main:index}
+
+about:
+    path: /{_locale}/about
+    defaults: { _controller: KillsoftCompetitionBundle:About:index}

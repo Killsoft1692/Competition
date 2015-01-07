@@ -1,5 +1,4 @@
 killsoft_competition:
-    resource: "@KillsoftCompetitionBundle/Controller/"
-    type:     annotation
+    resource: "@KillsoftCompetitionBundle/Resources/config/routing.yml"
     prefix:   /
 
