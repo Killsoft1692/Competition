@@ -35,7 +35,7 @@ class DataType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data class' => 'Killsoft\CompetitionBundle\Entity\Event'
+            'data class' => 'Killsoft\CompetitionBundle\Entity\Data'
         ));
     }
 

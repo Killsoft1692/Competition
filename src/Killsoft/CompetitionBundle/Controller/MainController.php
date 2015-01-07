@@ -2,22 +2,19 @@
 
 namespace Killsoft\CompetitionBundle\Controller;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 /**
- * Class AboutController
+ * Class MainController
  * @package Killsoft\CompetitionBundle\Controller
  */
-class AboutController extends Controller
+class MainController extends Controller
 {
     /**
-     * @Template()
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function indexAction()
     {
-        return $this->render('KillsoftCompetitionBundle:About:index.html.twig');
+        return $this->render('KillsoftCompetitionBundle:Main:index.html.twig');
     }
-
 }

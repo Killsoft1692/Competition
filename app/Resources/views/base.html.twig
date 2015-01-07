@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Love is everywhere!{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block navigation %}
+            <div class="navbar navbar-inverse">
+                <nav class="navbar-inner">
+                    <ul class="nav nav-pills">
+                        <li>
+                            <a href={{ path('love_profit') }}>Love Profit</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('main') }}">Love test</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('about') }}">About this project</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        {% endblock %}
+    <div class="container-fluid">
+        <div class="symfony-form-row">
+            {% block body %}
+            {% endblock %}
+        </div>
+    </div>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
