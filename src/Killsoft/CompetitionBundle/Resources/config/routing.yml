@@ -13,3 +13,8 @@ love_profit:
 about:
     path: /{_locale}/about
     defaults: { _controller: KillsoftCompetitionBundle:About:index}
+
+users:
+    path: /{_locale}/users
+    defaults: { _controller: KillsoftCompetitionBundle:Trust:showusers}
+
