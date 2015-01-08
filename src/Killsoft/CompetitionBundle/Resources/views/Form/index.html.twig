@@ -2,6 +2,22 @@
 
 {% block body %}
 
-{{ answer }}
+    {% if answer == "Sorry, very bad" or answer == "Bad result, but hope die in the end" %}
+
+<h1>{{ 'Sorry, life is pain'|trans|raw }}</h1>
+
+    {% else %}
+
+        <h1>{{ 'You are compatible'|trans|raw }}</h1>
+
+        {% endif %}
+
+        <h2>{{ 'Comment'|trans|raw }}: {{ answer|trans|raw }}</h2>
+
+  <br><br>  <a href="#">
+        <button type="submit">{{ 'don\'t trust?'|trans|raw }}</button></a>
+
+    <br><br>  <a href="{{ path('main') }}">
+    <button type="submit">{{ 'return'|trans|raw }}</button></a>
 
 {% endblock %}

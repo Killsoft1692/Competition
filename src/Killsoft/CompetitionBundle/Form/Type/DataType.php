@@ -21,8 +21,12 @@ class DataType extends AbstractType
         $builder
             ->add('male', 'text')
             ->add('female', 'text')
-            ->add('date1', 'date')
-            ->add('date2', 'date')
+            ->add('date1', 'date', array(
+                'years' => range(1950, 2100)
+            ))
+            ->add('date2', 'date', array(
+                'years' => range(1950, 2100)
+            ))
             ->add('save', 'submit', array(
                 'label' => 'try'
             ))
