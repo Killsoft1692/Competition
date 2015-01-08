@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+        <h3>
+            {{'This site give you chance to prove you love and help you to make your life happy.'|trans|raw }}
+        </h3><br>
+
+    <a href={{ path('main')}}><button type="submit">{{ 'Go'|trans|raw }}</button></a>
+{% endblock %}
