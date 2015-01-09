@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>{{ 'Now this people are happy'|trans|raw}}:</h1>
+    {% for users in users %}
+
+        <li>{{ users.male }}</li>
+        <li>{{ users.date1|date }}</li>
+        <li>{{ users.female }}</li>
+        <li>{{ users.date2|date }}</li>
+        <br>
+        <br>
+
+    {% endfor %}
+
+{% endblock %}
